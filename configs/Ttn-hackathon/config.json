@@ -9,7 +9,7 @@
     "user": "postgres",
     "password": "Password@123",
     "database": "venueconnect",
-    "host": "localhost",
+    "host": "10.13.152.23",
     "port": 5432,
     "idleTimeoutMillis": 0,
     "max": 20,
