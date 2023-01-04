@@ -1,0 +1,62 @@
+{
+  "name": "servie-venue-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/app/src/start.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "nodemon --experimental-modules --es-module-specifier-resolution=node src/bootstrap.js",
+    "lint": "eslint 'src/**/*.js' 'test/**/*.js'",
+    "lint:fix": "eslint --fix 'src/**/*.js' 'test/**/*.js'",
+    "db:setup": "npm run db:reset && npm run db:migrate",
+    "db:drop-database": "node src/scripts/drop-database",
+    "db:reset": "node src/scripts/reset-db",
+    "db:migrate": "node src/scripts/migrate-up.js",
+    "db:migrate-down": "node src/scripts/migrate-down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.tabcorp.com.au/TabDigital/ttn-hackathon-service-venue-connect"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tabdigital/api-auth-token": "^5.1.0",
+    "@tabdigital/api-client": "^5.0.0",
+    "@tabdigital/api-logger": "^6.0.0",
+    "@tabdigital/api-middleware": "^5.1.3",
+    "@tabdigital/api-server": "^2.6.1",
+    "@tabdigital/db-setup": "^1.4.5",
+    "@tabdigital/eslint-config-node": "0.0.7",
+    "@tabdigital/json-config": "^4.2.1",
+    "@tabdigital/secrets": "^1.0.2",
+    "@tabdigital/uri-template": "^1.0.0",
+    "axios": "^0.27.2",
+    "axios-retry": "^3.2.5",
+    "camelcase-keys": "^8.0.2",
+    "db-migrate-pg": "^1.2.2",
+    "db-migrate-plugin-es6cjs": "0.0.2",
+    "libxmljs": "^0.19.10",
+    "node-gyp": "^9.3.1",
+    "pg": "^8.8.0",
+    "promise": "^8.3.0",
+    "restify": "^10.0.0",
+    "restify-errors": "^8.0.2",
+    "strummer": "^2.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^10.0.0",
+    "mocha-multi-reporters": "^1.5.1",
+    "mochawesome": "^7.1.3",
+    "nodemon": "^2.0.16",
+    "nyc": "^15.1.0",
+    "prettier": "^2.6.2",
+    "should-sinon": "^0.0.6",
+    "sinon": "^14.0.0"
+  }
+}

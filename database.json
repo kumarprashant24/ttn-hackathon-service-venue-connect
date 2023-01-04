@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "user": "postgres",
+    "password": "root",
+    "database": "venueconnect",
+    "host": "localhost",
+    "driver": "pg",
+    "port": 5432
+  }
+}

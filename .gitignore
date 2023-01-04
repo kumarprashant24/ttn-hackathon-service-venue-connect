@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+configs/.DS_Store
+.npmrc
+.nvmrc
