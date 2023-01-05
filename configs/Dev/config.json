@@ -2,19 +2,19 @@
   "logAllRequests": false,
   "requestTimeout": "10s",
   "serverPort": 8186,
-  "publicUrl": "http://localhost:8186",
+  "publicUrl": "http://13.211.126.67:8186/",
   "basePath": "/v1/service-venue-connect",
   "showStackTrace": false,
   "venueConnectDatabase": {
     "user": "postgres",
-    "password": "root",
+    "password": "Password@123",
     "database": "venueconnect",
-    "host": "localhost",
+    "host": "10.13.152.23",
     "port": 5432,
     "idleTimeoutMillis": 0,
     "max": 20,
     "connectionTimeoutMillis": 10000,
-    "venueConnect": "postgres://postgres:localhost:5432/venueconnect"
+    "venueConnect": "postgres://postgres:Password@123@10.13.152.23:5432/venueconnect"
   },
   "venueConnectDatabasePool": {
     "connectionTimeout": "10s",
@@ -29,7 +29,7 @@
     "validAlgorithm": "RS256"
   },
   "accountService": {
-    "url": "http://localhost:8183/v1/account-service",
+    "url": "https://api.congo.beta.tab.com.au/v1/account-service",
     "timeout": "10s"
   },
   "identityService": {
