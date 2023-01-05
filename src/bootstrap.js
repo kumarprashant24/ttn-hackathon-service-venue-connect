@@ -9,7 +9,7 @@ secrets
   .load({
     service: 'service-venue-connect',
     env,
-    skip: ['Dev', 'Test']
+    skip: ['Dev', 'Ttn-hackathon']
   })
   .then(async (response) => {
     try {
